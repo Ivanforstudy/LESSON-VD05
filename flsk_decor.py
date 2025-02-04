@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def films():
-   return render_template("index.html", caption="Фильмы про Гарри")
+   return render_template("index.html", caption="Фильмы про Гарри", link="Посмотреть фильм")
 
 from flask import Flask, render_template
 
@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route("/shablon")
 def films2():
-    return render_template("index.html", caption="Гарри Поттер")
+    return render_template("index.html", caption="Гарри Поттер", link="Перейти в кинотеатр")
 
 @app.route("/person/")
 def person():
